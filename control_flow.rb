@@ -93,7 +93,17 @@ def fizzbuzz (num)
 end
 
 
-#calculator
-def calculator(num1, num2, operation)
 
+
+#calculator method
+def calculator(operation, num1, num2)
+    case operation
+    when "+" then num1 + num2
+    when "-" then num1 - num2
+    when "*" then num1 * num2 
+    when "/" then num1/num2
+    else 
+        puts "Invalid operation!"
+        return nil
+    end
 end
